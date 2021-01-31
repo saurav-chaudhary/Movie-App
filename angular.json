@@ -10,7 +10,7 @@
           "style": "scss"
         },
         "@schematics/angular:application": {
-          "strict": true
+          "strict": false
         }
       },
       "root": "",
@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "MovieApp"
+  "defaultProject": "MovieApp",
+  "cli": {
+    "analytics": "1c843f91-ae6a-47d2-a455-eddd13de5427"
+  }
 }

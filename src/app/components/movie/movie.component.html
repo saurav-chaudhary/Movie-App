@@ -1,0 +1,16 @@
+<div style="display: flex;">
+<div class="card" style="width: 18rem; text-align: center;" *ngFor='let m of movies'>
+    <img src="{{m?.Poster}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{m.Title}}</h5>
+        <p class="card-text">{{m.Actors}}</p>
+        <p class="card-text">{{m.Director}}</p>
+        <p class="card-text">{{m.Runtime}}</p>
+        <p *ngFor = "let rate of getRating(m.Rating)" style="float: left;color: orange;">
+        <i class="fa fa-star"></i>
+        </p>
+        
+    </div>
+    <button (click)="delete(m)" class="btn btn-primary">delete</button>
+  </div>
+</div>
